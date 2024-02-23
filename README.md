@@ -1,5 +1,5 @@
 # CSGO-Round-Prediction
-This project uses snapshots of each round to predict the winner of the round. The snapshot is recorded every 20 seconds from the round start until the round is decided. Each record contains information such as previous rounds' winner, remaining time of the round, each team's HP and equipment, etc.
+This project uses snapshots of each round to predict the winner of the round. The snapshot is recorded every 20 seconds from the round start until the round is decided. Each record contains information such as previous rounds' winner, remaining time of the round, each team's HP and equipment, etc. This dataset is obtained from: https://www.kaggle.com/datasets/christianlillelund/csgo-round-winner-classification
 
 In the project, I trained and tuned a logistic regression model, a random forest model, and a shadow neural network model and compared their performance. Among them, random forest performs the best and achieves a test accuracy of 86.9% It has overfit issue, but considering that the dataset is large and representative and that the test scores are high, the model should be able to generalize reasonably well. 
 
